@@ -2,11 +2,21 @@
  * Перечисления Положений в семье
  */
 public enum Relationship {
-    parent,
-    children,
-    granddaughter,
+    parent("Родитель"),
+    children("Ребёнок"),
+    granddaughter("Дедушка"),
 //    grandson,
 //    grandfather,
-    grandmother,
-    single
+    grandmother("Бабаушка"),
+    single("Одиночка");
+
+    private String title;
+    Relationship(String title) {
+        this.title = title;
+    }
+    @Override
+    public String toString() {
+        return  title;
+
+    }
 }
