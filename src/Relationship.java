@@ -1,4 +1,12 @@
+/**
+ * Перечисления Положений в семье
+ */
 public enum Relationship {
     parent,
-    children
+    children,
+    granddaughter,
+//    grandson,
+//    grandfather,
+    grandmother,
+    single
 }
